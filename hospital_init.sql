@@ -31,6 +31,7 @@ CREATE TABLE quantum_powers (
     power_id INT AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     description TEXT,
+    psionic BOOLEAN,
 )
 
 CREATE TABLE animal_maladies (
