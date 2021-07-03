@@ -32,18 +32,18 @@ VALUES
     ("elemental mastery: metal", "exhibits control over metal objects, magnetic or not", FALSE),
     ("telekinesis", "moves objects without touching them", TRUE);
 
-INSERT INTO animals(firstName, lastName, type, breed, admitted, doctor_id, quantum, alias)
+INSERT INTO animals(firstName, lastName, type, breed, age, admitted, doctor_id, quantum, alias)
 VALUES
-    ("Lola", "Wilkerson", "dog", "dalmation", "2020-08-04", 1, FALSE, NULL),
-    ("Sylvia", "Green", "cat", "siamese", "2020-09-04", 2, TRUE, "Shadow"),
-    ("Diana", "Green", "cat", "siamese", "2021-03-06", 2, FALSE, NULL),
-    ("Rachel", "Bishop", "goldfish", "shubunkin", "2021-04-15", 3, FALSE, NULL),
-    ("Alex", "Bryant", "dog", "saint bernard", "2021-05-14", 4, TRUE, "Saint"),
-    ("Victor", "Lex", "hamster", "chinese dwarf", "2021-05-17", 4, TRUE, "Zip"),
-    ("Jacob", "Hart", "goldfish", "fantail", "2021-06-01", 5, TRUE, "Shimmer"),
-    ("Eric", "Drake", "lizard", "bearded dragon", "2021-06-07", 3, FALSE, NULL),
-    ("James", "Cassell", "dog", "golden retriever", "2021-06-09", 1, FALSE, NULL),
-    ("Candi", "Bryant", "dog", "greyhound", "2021-06-27", 1, FALSE, NULL);
+    ("Lola", "Wilkerson", "dog", "dalmation", 7, "2020-08-04", 1, FALSE, NULL),
+    ("Sylvia", "Green", "cat", "siamese", 4, "2020-09-04", 2, TRUE, "Shadow"),
+    ("Diana", "Green", "cat", "siamese", 4, "2021-03-06", 2, FALSE, NULL),
+    ("Rachel", "Bishop", "goldfish", "shubunkin", 11, "2021-04-15", 3, FALSE, NULL),
+    ("Alex", "Bryant", "dog", "saint bernard", 2, "2021-05-14", 4, TRUE, "Saint"),
+    ("Victor", "Lex", "hamster", "chinese dwarf", 1, "2021-05-17", 4, TRUE, "Zip"),
+    ("Jacob", "Hart", "goldfish", "fantail", 20, "2021-06-01", 5, TRUE, "Shimmer"),
+    ("Eric", "Drake", "lizard", "bearded dragon", 10, "2021-06-07", 3, FALSE, NULL),
+    ("James", "Cassell", "dog", "golden retriever", 3, "2021-06-09", 1, FALSE, NULL),
+    ("Candi", "Bryant", "dog", "greyhound", 6, "2021-06-27", 1, FALSE, NULL);
 
 INSERT INTO animal_maladies(animal_id, malady_id)
 VALUES
