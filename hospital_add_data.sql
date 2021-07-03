@@ -27,20 +27,23 @@ VALUES
     ("telepathic messaging", "send and receive mental messages; non-invasive", TRUE),
     ("weather control", "exhibits control over local weather patterns", FALSE),
     ("archer", "shoots arrows. (YES, this is a SUPERPOWER, especially among animals who are not typically capable of wielding bows. Whoever keeps deleting this from our records, please STOP. - Dr. Blaze)", FALSE),
-    ("telepathic scan", "accesses surface thoughts of target, usually with physical contact", TRUE);
+    ("telepathic scan", "accesses surface thoughts of target, usually with physical contact", TRUE),
+    ("elemental mastery: fire", "exhibits control over heat and flame", FALSE),
+    ("elemental mastery: metal", "exhibits control over metal objects, magnetic or not", FALSE),
+    ("telekinesis", "moves objects without touching them", TRUE);
 
 INSERT INTO animals(firstName, lastName, type, breed, admitted, doctor_id, quantum, alias)
 VALUES
-    ("Lola", "Wilkerson", "dog", "dalmation", 2020-08-04, 1, FALSE, NULL),
-    ("Sylvia", "Green", "cat", "siamese", 2020-09-04, 2, TRUE, "Shadow"),
-    ("Diana", "Green", "cat", "siamese", 2021-03-06, 2, FALSE, NULL),
-    ("Rachel", "Bishop", "goldfish", "shubunkin", 2021-04-15, 3, FALSE, NULL),
-    ("Alex", "Bryant", "dog", "saint bernard", 2021-05-14, 4, TRUE, "Saint"),
-    ("Victor", "Lex", "hamster", "chinese dwarf", 2021-05-17, 4, TRUE, "Zip"),
-    ("Jacob", "Hart", "goldfish", "fantail", 2021-06-01, 5, TRUE, "Shimmer"),
-    ("Eric", "Drake", "lizard", "bearded dragon", 2021-06-07, 3, FALSE, NULL),
-    ("James", "Cassell", "dog", "golden retriever", 2021-06-09, 1, FALSE, NULL),
-    ("Candi", "Bryant", "dog", "greyhound", 2021-06-27, 1, FALSE, NULL);
+    ("Lola", "Wilkerson", "dog", "dalmation", "2020-08-04", 1, FALSE, NULL),
+    ("Sylvia", "Green", "cat", "siamese", "2020-09-04", 2, TRUE, "Shadow"),
+    ("Diana", "Green", "cat", "siamese", "2021-03-06", 2, FALSE, NULL),
+    ("Rachel", "Bishop", "goldfish", "shubunkin", "2021-04-15", 3, FALSE, NULL),
+    ("Alex", "Bryant", "dog", "saint bernard", "2021-05-14", 4, TRUE, "Saint"),
+    ("Victor", "Lex", "hamster", "chinese dwarf", "2021-05-17", 4, TRUE, "Zip"),
+    ("Jacob", "Hart", "goldfish", "fantail", "2021-06-01", 5, TRUE, "Shimmer"),
+    ("Eric", "Drake", "lizard", "bearded dragon", "2021-06-07", 3, FALSE, NULL),
+    ("James", "Cassell", "dog", "golden retriever", "2021-06-09", 1, FALSE, NULL),
+    ("Candi", "Bryant", "dog", "greyhound", "2021-06-27", 1, FALSE, NULL);
 
 INSERT INTO animal_maladies(animal_id, malady_id)
 VALUES
@@ -72,4 +75,13 @@ VALUES
     (6, 6),
     (6, 7),
     (7, 1),
-    (7, 3);
+    (7, 3),
+    (7, 9);
+
+INSERT INTO doctor_powers(doctor_id, power_id)
+VALUES
+    (2, 5),
+    (2, 8),
+    (4, 3),
+    (4, 7),
+    (4, 10);
