@@ -43,7 +43,7 @@ VALUES
     ("Jacob", "Hart", "goldfish", "fantail", 20, "2021-06-01", 5, TRUE, "Shimmer"),
     ("Eric", "Drake", "lizard", "bearded dragon", 10, "2021-06-07", 3, FALSE, NULL),
     ("James", "Cassell", "dog", "golden retriever", 3, "2021-06-09", 1, FALSE, NULL),
-    ("Candi", "Bryant", "dog", "greyhound", 6, "2021-06-27", 1, FALSE, NULL);
+    ("Candi", "Bryant", "dog", "greyhound", 6, "2021-06-27", 1, NULL, NULL);
 
 INSERT INTO animal_maladies(animal_id, malady_id)
 VALUES
