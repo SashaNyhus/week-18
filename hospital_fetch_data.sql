@@ -76,8 +76,9 @@ ORDER BY
 SELECT
     CONCAT_WS(', ', d.lastName, d.firstName) `doctor`,
     d.specialty,
+    CONCAT_WS(', ', a.lastName, a.firstName) `patient`,
     m.name `malady`,
-    CONCAT_WS(', ', a.lastName, a.firstName) `patient`
+    m.description `symptoms`
 FROM
     sasha_mackowiak.doctors d
     INNER JOIN sasha_mackowiak.animals a ON a.doctor_id = d.doctor_id
